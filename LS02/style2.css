@@ -1,0 +1,20 @@
+.logo{
+    background-color:palegreen;
+    height: 85px;
+    width: 400px;
+    margin: 0px auto;
+    position: relative;
+
+}
+.image{
+    height: 80px;
+    position: absolute;
+    top: 2%;
+    bottom: 2%;
+}
+.first{
+    left: 50%;
+}
+.second{
+    right: 50%;
+}
