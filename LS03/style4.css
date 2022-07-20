@@ -1,0 +1,21 @@
+.box{
+    background-color: beige;
+    margin: 20px auto;
+    height: 100px;
+    text-align: center;
+    
+}
+.first{
+    display: inline-block;
+    height: 100%;
+    width: 50px;
+    background-color: black;
+}
+.second{
+    margin-left: 100px;
+    background-color: black;
+    display: inline-block;
+    height: 50%;
+    width: 50px;
+    vertical-align: bottom;
+}
