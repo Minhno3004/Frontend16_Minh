@@ -1,0 +1,8 @@
+*{
+    margin:0;
+    padding:0;
+}
+#text{
+    margin: 40px auto;
+    text-align:center;
+}
