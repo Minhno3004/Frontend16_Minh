@@ -23,7 +23,9 @@ function clear(){
  
  function deleteItem(x){
      for( i=0; i <= table.length; i++){
+          
          if(data[i].id ==x){
+            confirm("Are u sure ???")
              data.splice(i,1)
              render()
          }
@@ -40,3 +42,14 @@ function clear(){
          }
      }
  }
+
+// function itemBackground(){
+//      switch(item_level){
+//           case "Small":
+//                item_level.style.backgroundColor = "gray"
+//           case "Medium":
+//                item_level.style.backgroundColor = "blue"
+//           case "High":
+//                item_level.style.backgroundColor = "red"
+// }
+// }

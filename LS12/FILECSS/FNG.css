@@ -1,0 +1,238 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 200%;
+    background-image: url("https://www.color-hex.com/palettes/78227.png");
+}
+
+.content{
+    position:relative;
+    left:50%;
+    transform:translate(-50%);
+}
+#bodyGame{
+    margin: 0px auto;
+    width: 80%;
+    height: 100%;
+}
+#bodyGame {
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+}
+#bodyGame::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-color: #399953;
+		background-repeat: no-repeat;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+		animation: rotate 4s linear infinite;
+    	}
+#bodyGame::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: white;
+		border-radius: 5px;
+		animation: opacityChange 3s infinite alternate;
+	}
+
+
+@keyframes opacityChange {
+	50% {
+		opacity:1;
+	}
+	100% {
+		opacity: .5;
+	}
+}
+
+
+
+#box{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-family: 'Edu TAS Beginner', cursive;
+    color:rgb(44, 20, 114);
+    text-align: center;
+    position:relative;
+    transform:translate(0,20%)
+}
+
+#playArea{
+    margin: 5%;
+    display:flex;
+    width: 60%;
+    height: 70%;
+    border: 2px solid black;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    background: rgb(205, 39, 39);
+    gap: 5%;
+}
+#playArea ol{
+    margin: 5px auto;
+    padding: 2%;
+}
+#notiArea{
+    background: rgb(193, 86, 86);
+    margin: 5%;
+    width: 40%;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+    
+}
+.number{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(24, 29, 33);
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: rgba(191, 74, 74, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
+    gap: 5%;  
+    color:aliceblue;
+}
+.number:hover{
+    background-color:rgb(199, 255, 30);
+    transition-delay:0.2s;
+}
+#notiArea p{
+    padding: 5px;
+}
+#notiArea p:first-child{
+    color:darkred;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-align: center;
+}
+#hp_play{
+    font-size: 30px;
+    color:#360248;
+    display:flex;
+    gap: 5%;
+    padding-top: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.hp_player{
+    width: 10%;
+    height: 20px;
+    background-color: red;
+    border: 1px solid black;
+}
+#warning{
+    background-color: rgb(211, 214, 66);
+    border: 1px solid black;
+    width: 50%;
+    height: 8%;
+}
+#result{
+    font-size: 20px;
+}
+#correctNotice p{
+    background-color:rgb(233, 223, 223) ;
+    width: 40%;
+    text-align: center;
+    color:white;
+    font-size: larger;
+}
+
+.correctResult{
+    color:rgb(7, 14, 20);
+    font-size: 20px;
+    background-color: rgb(128, 163, 128);
+
+}
+.menu{
+    background: rgb(193, 86, 86);
+    display:flex;
+    height: 100px;
+    width: 90%;
+    margin: 5% auto ;
+    border:2px solid black;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.menu button{
+    color:aliceblue;
+    width: 30%;
+    height: 25px;
+    display:flex;
+    background-color: rgb(141, 221, 50);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: rgba(148, 12, 12, 0.35) 0px -50px 36px -28px inset;;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.answer {
+    color:rgb(29, 67, 100);
+    font-size: 20px;
+    background-color: rgb(234, 205, 90);
+    text-align: center;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }}
+
+
+  @keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+
+

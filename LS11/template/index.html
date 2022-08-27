@@ -25,7 +25,7 @@
 
 		<!-- TITLE : START -->
 		<div class="page-header">
-		  <h1>Project 01 - ToDo List <small>NodeJS</small></h1>
+		  <h1>Project - ToDo List </h1>
 		</div>
 		<!-- TITLE : END -->
 
@@ -62,7 +62,7 @@
 
 			<!-- ADD : START -->
 			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-				<button type="button" class="btn btn-info btn-block" id="tab">Add Task</button>
+				<button type="button" id="button_form" class="btn btn-info btn-block">Add Task</button>
 			</div>
 			<!-- ADD : END -->
 
@@ -72,22 +72,22 @@
 		<!-- FORM : START -->
 		<div class="row">
 			<div class="col-md-offset-7 col-md-5">
-				<form action="" id="hidden" hidden method="POST" class="form-inline"  >
-					<div class="form-group" >
+				<form action="" hidden id="formInput" method="POST" class="form-inline"  >
+					<div class="form-group">
 						<label class="sr-only" for="">label</label>
-						<input type="text" class="form-control"  id="taskContent" placeholder="Task Name" ref="task_name" />
+						<input id="input_name" type="text" class="form-control" placeholder="Task Name" ref="task_name" />
 					</div>
-					<div class="form-group" >
+					<div class="form-group">
 						<label class="sr-only" for="">label</label>
-						<select name="ds" id="buttonLevel" id="inputDs" class="form-control" required="required" ref="task_level">
-							<option>Small</option>
-							<option>Medium</option>
-							<option>High</option>
+						<select id="input_level" name="ds" id="inputDs" class="form-control" required="required" ref="task_level">
+							<option value="0" >Small</option>
+							<option value="1">Medium</option>
+							<option value="2">High</option>
 						</select>
 					</div>
-
-					<button type="button" onclick="add()" class="btn btn-primary" id="buttonSubmit">Submit</button>
-					<button type="button" class="btn btn-default">Cancel</button>
+					<input type="hidden" id="input_id" value="">
+					<button type="button" id="button_submit" class="btn btn-primary">Submit</button>
+					<button type="button" id="button_cacel" class="btn btn-default">Cancel</button>
 				</form>
 			</div>
 		</div>
@@ -97,7 +97,7 @@
 
 		<div class="panel panel-success" >
 			<div class="panel-heading">List Task</div>
-			<table class="table table-hover" id="render">
+			<table class="table table-hover ">
 				<thead>
 					<tr>
 						<th style="width: 10%" class="text-center">#</th>
@@ -107,35 +107,9 @@
 					</tr>
 				</thead>
 
-				<!-- <tbody>
-					<tr>
-						<td class="text-center">1</td>
-						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea c</td>
-						<td class="text-center"><span class="label label-danger">High</span></td>
-						<td>
-							<button type="button" class="btn btn-warning">Edit</button>
-							<button type="button" class="btn btn-danger">Delete</button>
-						</td>
-					</tr>
-					<tr>
-						<td class="text-center">2</td>
-						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea c</td>
-						<td class="text-center"><span class="label label-default">Small</span></td>
-						<td>
-							<button type="button" class="btn btn-warning">Edit</button>
-							<button type="button" class="btn btn-danger">Delete</button>
-						</td>
-					</tr>
-					<tr>
-						<td class="text-center">3</td>
-						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea c</td>
-						<td class="text-center"><span class="label label-info">Medium</span></td>
-						<td>
-							<button type="button" class="btn btn-warning">Edit</button>
-							<button type="button" class="btn btn-danger">Delete</button>
-						</td>
-					</tr>
-				</tbody> -->
+				<tbody id="content-showData">
+					
+				</tbody>
 
 			</table>
 		</div>

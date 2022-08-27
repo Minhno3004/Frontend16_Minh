@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Finding Secret Number Game!!!</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/search-number-1888748-1600120.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./FILECSS/FNG.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <!-- <embed src="C:\Users\Minh No\Downloads\Free_K-Pop_Instrumental-www.FreeNaijaBeats.com.mp3" hidden loop="true" autostart> -->
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <audio controls>
+                <audio controls autoplay>
+                    <source src="https://soundcloud.com/src-music/infinity-zoctoy-progressive-house?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/ogg">
+                    <source src="https://soundcloud.com/src-music/infinity-zoctoy-progressive-house?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/mpeg">
+                </audio>
+            </audio>
+            <h1 class="title">
+                <div class="row">
+                <div class="col-md-12 text-center">
+                  <h3 class="animate-charcter">FINDING NUMBER SECRET GAME</h3>
+                </div>
+              </div>
+            </h1>   
+            <div id="bodyGame">
+                <div id="box">
+                    <div id="playArea"></div>
+                    <div id="notiArea">
+                        <div id="hp_play">Heath Point: </br>
+                            <span class="hp_player"></span>
+                            <p id="order"> X 3</p>
+                        </div>                       
+                        <div id="warning" hidden></div>
+                        <div id="correctNotice" hidden></div>
+                    </div>  
+                </div>
+                <footer class="menu">
+                    <button type="Button" id="playButton">START</button>
+                    <button type="Button" id="replayButton">PLAY AGAIN</button>
+                </footer>
+                
+            </div>
+        </div>
+    </div>
+    <script src='./FILEJS/const.js'></script>
+    <script src='./FILEJS/model.js'></script>
+    <script src='./FILEJS/view.js'></script>
+</body>
+</html>

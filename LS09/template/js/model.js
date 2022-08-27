@@ -1,6 +1,5 @@
 let data=[]
 
-
 function add(){
     let item_content = document.getElementById("taskContent").value;
     let item_level   = document.getElementById("buttonLevel").value;
@@ -14,8 +13,10 @@ function add(){
     render()
     clear()
 }
-
-
+function resetForm(){
+    ELEMENT_FORM_BUTTON.value = ""
+    ELEMENT_FORM_INPUT.value  = ""
+}
 function render(){
     table= `<thead>
                 <tr>
