@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>KMOS Library Website</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- Font links -->
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Css links -->
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/const.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/model.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/style.css'>
+    
+<body>
+    <!-- header start -->
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo">
+                <img src="https://www.iconpacks.net/icons/2/free-opened-book-icon-3163-thumb.png">
+                <p>KMOS</p>
+            </a>
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#featured">featured</a>
+                <a href="#review">reviews</a>
+                <a href="#Spc">Top</a>
+                <a href="#footer">About</a>
+            </nav>
+        </div>        
+    </header>
+
+<!-- header end -->
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+    <div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+    <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+    </form>
+</div>
+
+<!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="row">
+
+            <div class="content">
+                <h3>upto 75% off</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt nostrum accusamus. Nam alias sit necessitatibus, aliquid ex minima at!</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537421550_9a14c29782cbf3961b8f512d4a094143.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537377466_1c27fe26feb7b8073c7aa258695c3386.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537421528_f122516214dc80d25dca1d8e5d334cd7.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537403419_66bbc0868e874cd40271c48d96da3047.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537331313_cd9d94b8ff75a970ed74878cdd49f3fd.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537331322_e06a20dbf19a9d00fe8beebdadcc2bf9.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537377458_19a28e0a5ad76746381002d47765311b.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537326423_ea204352d0dedaf254d39d920a602f07.jpg" alt=""></a>
+                </div>
+                <img src="C:\Users\Minh No\Downloads\stand.png" class="stand" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- featured section   -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"><span>featured books</span></h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537421550_9a14c29782cbf3961b8f512d4a094143.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Annual books</h3>
+                    <div class="price">$17.99 <span>$30.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537377466_1c27fe26feb7b8073c7aa258695c3386.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$16.99 <span>$22.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537421528_f122516214dc80d25dca1d8e5d334cd7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$30.99 <span>$60.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403419_66bbc0868e874cd40271c48d96da3047.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537331313_cd9d94b8ff75a970ed74878cdd49f3fd.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$33.99 <span>$86.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537331322_e06a20dbf19a9d00fe8beebdadcc2bf9.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$18.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537377458_19a28e0a5ad76746381002d47765311b.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$25.99 <span>$44.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537326423_ea204352d0dedaf254d39d920a602f07.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$20.99 <span>$35.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Users\Minh No\OneDrive\Hình ảnh\Ảnh chụp màn hình\z3690283667430_a34a1fb84c60bed5e7d86bf9c69a9acb.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+<!-- review section -->
+<section class="review" id="review">
+        <div class="review-header">
+            <img src="https://smithfieldcity.org/sites/default/files/styles/full_node_primary_extra_wide/public/imageattachments/library/page/5731/teen_book_review_banner.png?itok=B3unfVbw">
+            
+        </div>
+        <div class="user-review">
+            <div class="text">
+            <h1>The Betrothed</h1>
+            <p>Cass, Kiera
+                3 stars = Pretty Good
+            </p>
+            <h2>Review:</h2>
+            <p>Three stars is pretty tough for me to rate, seeing as I love the Selection series so much! Kiera Cass is a great author, but The Betrothed didn't blow me away. The main character, Hollis, follows everyone else's lead in trying to seduce King Jameson and is surprised to succeed. She has trained in the ways of a queen her whole life and is prepared for life as a royal- until a handsome palace worker shows up and Hollis questions everything she thought she knew about true love. Hollis is a level-headed, passionate character (although a little whiny at times) and I liked her character arc from a conforming queen-to-be into a rebellious person who cares more about love than money or a title. What I didn't like as much was the disheartening twist and a complete change in the mood of the book. Many readers enjoy a good dark plot twist, but it felt like I had started reading a whole different book after being so invested in the first one.
+                Grade 12
+                </br>
+                Reviewer's Name: <b>Maggie</b>
+            </br>
+                Genres:
+                <span class="category">Fiction, Historical, Romance</span></p>
+            </div>    
+            <img src="https://ppld.org/sites/default/files/images/linkimages/the%20betrothed.jpg">
+        </div>
+        <div class="user-review">
+            <div class="text">
+            <h1>Crime and Punishment</h1>
+           
+                5 stars = Bohemian Rhapsody Awesome!
+            </p>
+            <h2>Review:</h2>
+            <p>Crime and Punishment is a novel like no other. Set in Russia in the mid-1800s, Crime and Punishment watches the mental anguish suffered by a poor man forced to turn to murder in order to survive. The work has been cemented as one of the greatest pieces of psychological writing of all time and for good reason. Raskolnikov is a deeply tortured protagonist, and Dostoevsky brutally captures his emotions, fears, and motivations throughout the novel. As other characters with conflicting motivations threaten Raskolnikov's plans and schemes, his stress only becomes more powerful.
+                Crime and Punishment is not an easy novel by any means. The writing style is fairly archaic, and conversations can run on for what feels like forever. However, the story is so well thought out and executed that it deserves a read from anyone interested in psychology, literature, or even acting (the story serves as an excellent example of a character study from which one can take notes). Do not expect light reading or a feel-good story, as this book will take the reader into the desperation and pain experienced by the protagonist.
+                Crime and Punishment is one of the best novels of all time, and although it is a challenge to read, it is absolutely worth it for its views on society and man's mental state. If this review has sounded interesting to you, do yourself a favor and check it out today.
+            </br>
+                Reviewer's Name: <b>Locke</b>
+            </br>
+                Genres:
+                <span class="category">Fiction, Classics</span></p>
+            </div>
+                <img src="https://ppld.org/sites/default/files/images/linkimages/Crime%20and%20punishment.jpg">    
+        </div>
+        <div class="wrapper">
+            <div class="container">
+              <h1>What Customer Says</h1>
+            </div>
+          </div>
+            <div class="review-row">
+                <div class="review-col">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnpyt5yTRQkfzKDfdYPX-u8VMgmN5F_pT7fRLuI-k99lKNwMx_pqyqKtGA72yTJJGmRYw&usqp=CAU" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Fuga placeat itaque qui earum, nulla omnis error fugit at repellendus eum beatae magnam
+                        exercitationem ducimus illum maiores, ullam provident explicabo similique.</p>
+                        <h3>Eren Yeager</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-col">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKkBuYfSwiskqjO8LnQHZvzRdl7zNuBP2hQ&usqp=CAU" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Fuga placeat itaque qui earum, nulla omnis error fugit at repellendus eum beatae magnam
+                        exercitationem ducimus illum maiores, ullam provident explicabo similique.</p>
+                        <h3>Jessica Miranda</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- spc section -->
+<div class="campus-header">
+    An All-Time Best-Seller
+</div>    
+<section class="campus" id="Spc">
+    <div class="row-campus">
+        <div class="campus-col">
+            <img src="https://i.mydramalist.com/6Zb82_4f.jpg">
+            <div class="layer">
+                <h3>Omniscient Reader's Viewpoint</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="https://bestlifeonline.com/wp-content/uploads/sites/3/2020/10/Harry-Potter-and-the-Chamber-of-Secrets-book-cover.jpg">
+            <div class="layer">
+                <h3>Harry Potter</h3>
+            </div>
+        </div>     
+        <div class="campus-col">
+            <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/9/2/1441203713652/0bf35fbc-b649-4290-bf76-f1bdcc631bb6-399x600.jpeg?width=300&quality=45&auto=format&fit=max&dpr=2&s=70d1545cf5603f2ea7e179f282389a04">
+            <div class="layer">
+                <h3>The God Of Small Things</h3>
+            </div>
+        </div>          
+    </div>
+</section>
+
+<!-- Call to action -->
+    <section class="cta">
+        <h1>Enroll For Our Various Online Website</br>Anywhere From The World</h1>
+        <div id="circle-container">
+            <div id="cc">
+            <div class="circle" id="five"></div>
+            <div class="circle" id="four"></div>
+            <div class="circle" id="three"></div>
+            <div class="circle" id="two"></div>
+            <div class="circle" id="one"></div>
+            </div>
+        </div>
+        
+    </section>
+
+<!-- footer -->
+    <section class="footer" id="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore illum ab.
+            Iure voluptate exercitationem dolorem explicabo
+            error</br>rem fugit fugiat perspiciatis. 
+            Et, eos sed maiores dolore quas veniam. Amet.</p>
+            <div class="icons">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <i class="fa fa-gift" aria-hidden="true"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by MinhNo</p>
+    </section>
+    <!-- JS links -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src='JS/const.js'></script>
+    <script src='JS/model.js'></script>
+    <script src='JS/view.js'></script>
+</head>
+</body>
+</html>

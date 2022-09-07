@@ -1,0 +1,20 @@
+
+:root{
+    --orange:rgb(244, 150, 18);
+    --green:#0c3106;
+    --dark-color:#219150;
+    --black:#444;
+    --red:rgb(203, 21, 21);
+    --dark-green:#53BAC1;
+    --light-color:rgb(233, 226, 226);
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Oswald');

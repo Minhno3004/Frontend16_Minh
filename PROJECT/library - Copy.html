@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>KMOS Library Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- Font links -->
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Css links -->
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/const.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/model.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/style.css'>
+    
+<body>
+    <!-- header start -->
+    <header class="header">
+        <div class="header-1">
+
+            <a href="#" class="logo">
+                <img src="https://www.iconpacks.net/icons/2/free-opened-book-icon-3163-thumb.png">
+                <p>Bookly</p>
+            </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+            </form>
+
+            <div class="icons">
+                <div id="search-icon" class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"></div>
+                <div class="icon"><img src="https://png.pngtree.com/png-vector/20191028/ourlarge/pngtree-cart-icon-for-your-project-png-image_1904818.jpg"></div>
+                <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEX5S035+fj////5///5Skz5SEr5Q0X5Rkj5Oz35QUP5PkD5QkT5/Pv5OTz5lJX5NDf5LzL/9PT+6ur5jI35h4j/+vr59PT9wMH4LjD6env6c3T8srP+3d35UVP6gYL5X2H9ysv+5eX919f7oKH5WFr8qKn6bW79zs75tbb57Oz7k5T6ZWb5mpv5xMT5YmP6fX/4JCj5HiJO8YO3AAAONUlEQVR4nNWd2YKiOhCGkRACSAziAu6KuPc27/9yAy7dKlslBMH/4lycmaHzdSqpLJUqRX2xBoMX/0Cl8p8wcANvsu6PFzPcNiiLRC1dmZ1Gvc3+c9qtHLhKwu7KW88X+pmpTTDWNOUqTcNEN2Neqm17m6VbIWdFhIOV19kSxow2/sVKl0ZMyuhstN651TSlCsLVvh8a1CIFbPfCusHap+PyIL81sgkHQWdhUBPD4e5602Lt7WYquUVyCXdzzEwiQPdHabDwQyqkRMKgbzCdwzKzhC0Hb1bSmiWL0N0Qv12e7irN8L88SfOrFMLBcuQYEnrvXoRZRynWKoGwOwmZLhfvIssZL8t3ZGlCd42ZyMwJks4W+7KMJQndY9uojC8WYbNJOcZShN2jYUkefklhqkzqItwwq2q8G+NnHYSeQV/CF0vzF8Lzqihh8OVUbp/3In5fcM0qRtjtOWXWZkKyDLHhKETo6a8ZgI/S2EnEVAUI3VF1DjBfhK1fQbg35a0/uUX5ZxxewsGIvXSGeRZhm2oJA8usky8WO3UrJFz/1NqBF+l+UBVhd8zqprvoh2fC4SCcKrVb6E1sBLdUOKFnvNzJZ8sKwcccYMJ1vXPos4i5k0zYb8gQ/BVme6mE29ftI8DyYfMNiHAwa8wccy+nJ4vwoFRy0FRerC+H0FUaNIk+in4Xn+EUE66aCxghjgoRCwndpproRcaoLOGhyT0Yi36XIxw0uwdj0YLppoBw1njAaEbtlCDcNtIPPsvJ3RTnEvYbuJJJk+MJEm6athbNkkYDIULvXQCjZTjJDuTIJpzKvvOsUvoi0/NnEnab7ggfZcy5CcdvMY3+yck6888iXL/PILzqX8ZZcQZh8FN3g7mlmelDMZ1wUP3VrnyZ6SvUdMLvNxuEF6Wf3KQSvpEnvJdmpXnFNELXfEMbjdUeAwlHb2mjsdLsNIXwTW00lmYk7TRJ2OWJfG2azOShRpKwZ9TdzDLyl4WEU6fuRpYS1goJv95qwZ0UfT7rfyb03rsLI/ndfMJ32hSmqz3PJdy8yclMnpxpDmH3fV3hn8g2h7BTKpoLY/NXhBQ9lklKw5gQ6/cLwoFXbJdJ6IoDYkKtMOx1btouQkwpfF7WsEW1MAzHH9cPHE8zgxr8vybluRMfCEW7UGfWbLEPWi30J7vl7vdbQ9cgbbQYma29Q+vhC63dfqPoVKArHzrxntAVew9Cne/JLmqb3XqUHWFOtzPMCnoSM9aZrIYo8YGIcrjahJT7966PMwjXAus14piTINm4X8roD/ZbJ2ez0nZmk1XOB1Br2rMczusTFqQSdgXmBmfsDTNb99sVQc/PsDX8M1/aBR+I/tz7zvpAusx5KuGE11Vo1PCi4VIsG+2UtJhUzMId6AMIfYZc8TzMTSMMOcc0sfY2pHmXJnrJeA5rAfsFXT6wJxwrZquTQrjjXJEa4QHavEsTnyJTNTZvcX3ADTkWXNYgSTjiGs3YWbcKxl+iiXvj7kfo1icPXyuetT4csJn9nWf8ErpcXagrO872xYju1+/Eb2xXAh/YadAjJBwmCDc8rsJSuCz0Jns4vhoa3RbNwOmIwzG0mf70mZDHVbC5EGA8qfbOpsJGYv8+GhhbIKLZeyIMfDigMxfqgLPQxz+s/3wLAsaII6BTM54I+/AnBkZHuH0x4lSZT0t8wEYfMERn+UgIH4VkVgbwslwt9YHWCNRYMnog3IHXM8R3SzawrGx0gsyoWrt7TziHOkMyW9UMGE/JGOIX6ecd4QA8k1IBPyhdaAoxOX1+RxhAjdTYNAAwQoSE+mCl+0fYAS4ViFI321UIEkhx2SVeCBfAZTsb1j4IL7KngIOqywbjTLgC+go2aYSNxkLr4rMNcvol9GDbElzSE8qUfQC0+XzrfSbsw4Yh493vVCkEuKk++4uYcADb3WOlQYAt2y0eidbxSggchtRrEmELFbu480BU4MPQasg8ehNSijuxeyGEHXUbH43qwohwUtgz8eF3TLgFeUNW/4L0Sagw+I5uzoSw4Auz17AujKfTov1CfFsaEa5Ai9KGzTOxis0Uh4OYEBQhhGfDuoFSVDgQaTcmBF3IvCmhE8SEc8gRjdWMbdOj0EeRF2BeTLgAbZj3TSQsDKww1hHhAHIvipUmGmmrVRQnqn9HhC5soqmbJVXDIkeHw4gwgFxYkG0DjTTSrGCEaXpECHIW7eb5+1io8IyQDRS1eHWnNHJFEwsVHtU7K0UFHAe8MaEfKLAbi7clZEtFHUN2Fu9L6Ckwh/+2hMZEUYsm3PcmtNYK7PL3bQnbR0UFPZB5W0K9r8DuRt+WkMwVFXTQpouGFlQrAOFIUUFnGDisGyZVw8JJhIyVwVsTFu78MJRQI4emnSW24uvuwruLiBBmpQptzsXan4r3+OdxCDvSb8j19qMAl4jkW1FhUdQ4bOAxhl18ABN7C1j4uqbXHUaTlH0oHmF6T1EVWKAJbZ6ZIkA8pdkBrrzj6JTmEZ6KN37WRlEBf+0sZ9owM7UPgMQPdK+Ao58bZ6YQIz3vgHvAaCE8a1ofQuZIZ6nAw59Zs+7XQF2o+FNF3UNj/JsVi9EaFl/jR3JcRf0Eh5Y2K54GZnvxiTD8eTpZNIkQdEaoYVVRu/CXKE5zOhHBXmmRU3y7Bn+HoJGmTKc2bBQq7X58Qwp1+ZGspsTUoA9gHNcmJoQ6xPO/KPOQQJ5sWPzI7Zab5w0+acZNqQ0O+V3FhEuel5WNiP1CR2CnxPm/IkKXK49CA+ZT24XmWiOLc0zUALh/ugjj2mO9bQqd/c3jJXKP722l/lVzJ6ItuL10ciHkfKVO+7UiIo68sWx6IYQ/errIrzN6CE3gj101co2g5c3PpuH6jofRiiNR1zm3wjlWn2NVcxaZ1YWIppijrcb6RnjkzTyh1+T47RYP4CUDyJlwx51ZyFjXMhRRn6cvNHK4EQokNXHqQER8lVIuKU4uL7tgsex1I6IOX9oHY/NHyPUY/6qX+wy05sxrQad/hCuRFF/+ay/c0I4z8+81rcL1HTBvXpOzfl55Row+ebOqmp17wsKA6VT5r9tnoA13VdBroqEroVg+SE0PXoSIPjlyPlyElceMA0JpwxRsvQYReW3u9sU7p3tCkdk0RjRegYh2//ibdksueCN0ua3gIu2n+gf6iDf9Uaybkf5lbxHOW8qq9ovIE/nt080zoXh+5J9q/SKCX6zcyz88Ew7Ecyb6VfpFtBEqS6j/pkz+y4TFvYX6E6tujYp6Yrbl75KEqxL5dVlFYQw2mosB4pmaJFTHJWo7sWMViPZQtD49m6QR8h5IPX5yzJu+rVhoKFoeW9MHaYTg/B+pMokruRvRShdtkPGhphIC3+VniFhy76XQ1BIFfCgDcU/Id7yfEJZ6z48+deHWWPflOx+y7IIeeWVLc+TFo6APXzyzuLHKIhzAro6zFU2pUuYbm/PM6VHmQ73Ax2zX4NiaLNGtjJspu0XKpN1mbjYhNBQzW8ZYMKXinZA7KzOrW0c1h3ApuIn6k+mXnVJR4Jeqz0C7eYTlfOJZmlNqO2Ujr1wFcPpU7/GZcFq6E+Nay+Lzjd0SXGrfpOlqPqHKdTOQITrqCnYjOpxKTnb+ZxFhV0ZBMlMRyKEbA67MkqVd9e0zULKSDscda7aIUDAq8vgSk6fIXxUTct+XZvyoPu9gjDaDpX+5iSozqYRTOXVK2HjI1Y3o8FW6DhMJkzhpVcnWchDbXMfFaEfLV1e+rxiQRyjBKZ6F2Rpqqba9Ed3t3ul+W5hPCEqAChHrw5apaDiW8CNJmFbFMr3Co7Rax8YXxG1IsdBLfBCUUD3JqjhO2EeRpdpoz31zliaWXp47g7Arr3QXDfOX4nIsNJrYEr4+l1BmMVn8kzenog2TYi/YyKjqnFnxWGJBYC1a4GRYqo16ksrW+hnlgHPqco8kLMFvck7p3h/9FksoK5ZV0jmHsBtKrBNoKmmWigITns4/V7SXyZFTPX5llvfBvyKs82ypXDVH8mVmzDIFhOWO+RMyvoJ7RoRWW1mF+sism02RR6juJWz479rBegeE7FgIoeO8qJYXWBpNq3QMIlR546wK1PZP62kQBNPPjmLJWlPkTKMAQrXkoUlCxPrxIzGZQ/wnUT6Wh1DlCBuvSY6XT1BEqH43HNHJdIRQwgGs5kldyvb0YMIIscG9WNiDEMImGyoAEESoCgZEVK6flGLxYoQqZ4D1a6Qlq4yLE6r88auVi9BcR89LqHoiNV2rlDnLW6oJEKoBkbfMkiC6zVlsixGq7qJBjpH1Ms4syhCqg/LXCpKEfYCXECBU1cm/Rsw3OnCOESBUpxbH2/2qxE5gC+UnVAff5S7Zy4tkHPzKIoz2/ZakwyMxGSGPhQoRqqtxfd1IWIfLQsUIo240ahqNNAz4WytCqLqj0vftAtKd5BV2VYSqutRevaPS/G0iCKFKQlVd+y+dcWj7OU6mckL18O1IPPbPl/UcyvUSwsj/n6Qd6ubKZD3oMlsyoaruTnIu//JkGX2xASiFMGIcsypdh2ZYvVJ85QmjjeNc9NlHoTBrfwD3uVUSRqucoyEhGCYh3ZlNSoy/m2QQRgvyfejLNVZM/THooKlQcggjTXsG40isko9nOsqmtHleJY0w0nJkMvFnIH94TDnybiByJJNQVbufc4UKP+aJQ5gNGh4DqW2SSxipG3ROFhOg1Ehk5uONxN67SDphLNc7RpQUbLEaMWlEt94dir/NrUoIYx12m3lIHWboeckMNNKmjJlfvclUgmNIVWWEsQbdwFt/hzpzfMYMq60TQjCO/qObFo3+p8Pwqb/xVtz7dh5VSnjTYBUsvcn62J+PxuPx6Hve62z23nLqVop21X9dTjHz7ABVugAAAABJRU5ErkJggg=="></div>    
+            </div>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#featured">featured</a>
+                <a href="#arrivals">arrivals</a>
+                <a href="#reviews">reviews</a>
+                <a href="#blogs">blogs</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- bottom navbar  -->
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+<!-- login form  -->
+
+    <!-- <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+
+    </div> -->
+
+<!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="row">
+
+            <div class="content">
+                <h3>upto 75% off</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt nostrum accusamus. Nam alias sit necessitatibus, aliquid ex minima at!</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537421550_9a14c29782cbf3961b8f512d4a094143.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537377466_1c27fe26feb7b8073c7aa258695c3386.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537421528_f122516214dc80d25dca1d8e5d334cd7.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537403419_66bbc0868e874cd40271c48d96da3047.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537331313_cd9d94b8ff75a970ed74878cdd49f3fd.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537331322_e06a20dbf19a9d00fe8beebdadcc2bf9.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537377458_19a28e0a5ad76746381002d47765311b.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="C:\Thư mục mới\image\z3697537326423_ea204352d0dedaf254d39d920a602f07.jpg" alt=""></a>
+                </div>
+                <img src="C:\Users\Minh No\Downloads\stand.png" class="stand" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"><span>featured books</span></h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search">A</a>
+                    <a href="#" class="fas fa-heart">A</a>
+                    <a href="#" class="fas fa-eye">A</a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Annual books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search">A</a>
+                    <a href="#" class="fas fa-heart">A</a>
+                    <a href="#" class="fas fa-eye">A</a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="C:\Thư mục mới\image\z3697537403415_5221d111abcdae229640b54176272938.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+<section class="review" id="review">
+        <div class="review-header">
+            <img src="https://smithfieldcity.org/sites/default/files/styles/full_node_primary_extra_wide/public/imageattachments/library/page/5731/teen_book_review_banner.png?itok=B3unfVbw">
+            
+        </div>
+        <div class="wrapper">
+            <div class="container">
+              <h1>What Customer Says</h1>
+            </div>
+          </div>
+            <div class="review-row">
+                <div class="review-col">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnpyt5yTRQkfzKDfdYPX-u8VMgmN5F_pT7fRLuI-k99lKNwMx_pqyqKtGA72yTJJGmRYw&usqp=CAU" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Fuga placeat itaque qui earum, nulla omnis error fugit at repellendus eum beatae magnam
+                        exercitationem ducimus illum maiores, ullam provident explicabo similique.</p>
+                        <h3>Eren Yeager</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-col">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKkBuYfSwiskqjO8LnQHZvzRdl7zNuBP2hQ&usqp=CAU" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Fuga placeat itaque qui earum, nulla omnis error fugit at repellendus eum beatae magnam
+                        exercitationem ducimus illum maiores, ullam provident explicabo similique.</p>
+                        <h3>Jessica Miranda</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<div class="campus-header">
+    An All-Time Best-Seller
+</div>    
+<section class="campus">
+    <div class="row-campus">
+        <div class="campus-col">
+            <img src="https://i.mydramalist.com/6Zb82_4f.jpg">
+            <div class="layer">
+                <h3>Omniscient Reader's Viewpoint</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="https://bestlifeonline.com/wp-content/uploads/sites/3/2020/10/Harry-Potter-and-the-Chamber-of-Secrets-book-cover.jpg">
+            <div class="layer">
+                <h3>Harry Potter</h3>
+            </div>
+        </div>     
+        <div class="campus-col">
+            <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/9/2/1441203713652/0bf35fbc-b649-4290-bf76-f1bdcc631bb6-399x600.jpeg?width=300&quality=45&auto=format&fit=max&dpr=2&s=70d1545cf5603f2ea7e179f282389a04">
+            <div class="layer">
+                <h3>The God Of Small Things</h3>
+            </div>
+        </div>          
+    </div>
+</section>
+
+<!-- Call to action -->
+    <section class="cta">
+        <h1>Enroll For Our Various Online Website</br>Anywhere From The World</h1>
+        <div id="circle-container">
+            <div id="cc">
+            <div class="circle" id="five"></div>
+            <div class="circle" id="four"></div>
+            <div class="circle" id="three"></div>
+            <div class="circle" id="two"></div>
+            <div class="circle" id="one"></div>
+            </div>
+        </div>
+        
+    </section>
+
+<!-- footer -->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore illum ab.
+            Iure voluptate exercitationem dolorem explicabo
+            error</br>rem fugit fugiat perspiciatis. 
+            Et, eos sed maiores dolore quas veniam. Amet.</p>
+            <div class="icons">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <i class="fa fa-gift" aria-hidden="true"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by MinhNo</p>
+    </section>
+    <!-- JS links -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src='JS/const.js'></script>
+    <script src='JS/model.js'></script>
+    <script src='JS/view.js'></script>
+</head>
+</body>
+</html>
