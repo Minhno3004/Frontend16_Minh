@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:100%;
+    text-align: center;
+}
+.header .element{
+    display:flex;
+    
+   
+}
+.container ol{
+    border: 1px solid  black;
+    width: 30%;   
+}
+ .value{
+    display:flex;
+    
+}

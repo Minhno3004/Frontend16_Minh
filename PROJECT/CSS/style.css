@@ -374,6 +374,11 @@ body{
     padding:1rem 0;
 }
 
+#icon{
+    width:20px;
+    cursor:pointer;
+    margin-left: 20px;
+}
 
 
 /* feature */
@@ -480,6 +485,23 @@ body{
 .swiper-button-prev:hover{
     background: var(--black);
     color:#fff;
+}
+
+
+/* reading */
+.reading-area{
+    
+    width:100%;
+    display:flex;
+}
+.reading-area h2{
+    color:#05464e
+}
+.reading-area .read{
+    width:40%;
+}
+.reading-area upd{
+    width:60%;
 }
 
 
@@ -687,6 +709,59 @@ body{
     opacity:1;
 }
 
+/* ytb rcm */
+.tlt-rcm{
+    font-family: "Cairo";
+    color: #FFF; 
+    letter-spacing: 1px;
+    word-break: normal;
+}
+  
+.tlt-rcm h1 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: left;
+    margin-left:20px;
+}
+
+.ytb-rcm{
+    margin-top: 10%;
+    width:100%;
+    display:flex;
+    gap: 2%;
+}
+.youtube-row {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.youtube-row col-1{
+   width:50%;
+}
+  .youtube-row col-2{
+    width:50%;
+}
+
+
+.ytb-page-btn span {
+    display: inline-block;
+    border: 1px solid #09674b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.ytb-page-btn span:hover {
+    background: #0f5b1f;
+    color: #fff;
+}
 
 
 /*cta */
