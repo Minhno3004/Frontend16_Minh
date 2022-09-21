@@ -19,7 +19,7 @@
     --secondary-color: black;
   }
 .dark-theme{
-  --primary-color:var(--secondary-color);
-  
+  --primary-color:black;
+  --secondary-color:white;
 }
   @import url('https://fonts.googleapis.com/css?family=Oswald');
