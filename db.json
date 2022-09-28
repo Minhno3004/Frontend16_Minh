@@ -2,8 +2,63 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "image":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/to-kill-a-mockingbird-1623750649.jpg?crop=0.908xw:1.00xh;0.0466xw,0&resize=980:*",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee"
+    },
+    {
+      "id": 2,
+      "image":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/catcher-in-the-rye-1623752773.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "title": "The Catcher in the Rye",
+      "author": "JD Salinger"
+    },
+    {
+      "id": 3,
+      "image":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/great-expectations-1623752158.jpeg?crop=1xw:1xh;center,top&resize=980:*",
+      "title": "Great Expectations",
+      "author": "Charles Dickens"
+    },
+    {
+      "id": 4,
+      "image":"https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457528919-lord-of-the-flies.jpg?resize=980:*",
+      "title": "Lord of the Flies",
+      "author": "William Golding"
+    },
+    {
+      "id": 5,
+      "image":"https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457529710-the-handmaids-tal.jpg?resize=980:*",
+      "title": "The Handmaid's Tale",
+      "author": "Margaret Atwood"
+    },
+    {
+      "id": 6,
+      "image":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/the-scarlet-letter-1623752522.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne"
+    },
+    {
+      "id": 7,
+      "image":"https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457528777-lolita.jpg?resize=980:*",
+      "title": "Lolita ",
+      "author": "Vladimir Nabokov"
+    },
+    {
+      "id": 8,
+      "image":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/wuthering-heights-1623829128.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë"
+    },
+    {
+      "id": 9,
+      "image":"https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457529844-lady-chatterleys-lover.jpg?resize=980:*",
+      "title": "Lady Chatterley's Lover",
+      "author": "DH Lawrence"
+    },
+    {
+      "id": 10,
+      "image":"https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457538667-great-gatsby.jpg?resize=980:*",
+      "title": "The Great Gatsby ",
+      "author": "F Scott Fitzgerald"
     }
   ]
 }

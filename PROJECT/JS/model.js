@@ -1,5 +1,12 @@
-// 
-
+// import react from 'react'
+// const Modal=() => {
+//   return(
+//     <>
+//     
+//   </>
+//   )
+// }
+// export default Modal
 
 
 
@@ -26,7 +33,7 @@ var swiper = new Swiper(".books-slider", {
     },
   });
   
-  var swiper = new Swiper(".featured-slider", {
+var swiper = new Swiper(".featured-slider", {
       spaceBetween: 10,
       loop:true,
       centeredSlides: true,
@@ -52,7 +59,5 @@ var swiper = new Swiper(".books-slider", {
           slidesPerView: 3,
         },
       },
-    });
+  });
     
-
-   

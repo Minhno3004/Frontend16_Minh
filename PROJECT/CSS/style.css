@@ -53,7 +53,7 @@ body{
 /* header css */
 .header .header-1{
     height: 30%;
-    background:#fff;
+    background:var(--primary-color);
     padding:24px 9%;
     display: flex;
     align-items: center;
@@ -64,12 +64,13 @@ body{
     width: 20%;
     font-size: 30px;
     font-weight: bolder;
-    color:var(--black);
+    color:var(--secondary-color);
     display:flex;
     gap: 1%;
 }
 .header .header-1 img{
     width: 20%;
+    
 }
 
 .header .header-1 .search-form{
@@ -81,6 +82,14 @@ body{
     display:flex;
     align-items: center;
     border-radius: 8px;
+}
+.header-1 p{
+    color:var(--secondary-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: -5%;
+    margin-right: 20px;
+    
 }
 
 .header .header-1 .search-form input{
@@ -95,7 +104,7 @@ body{
 .header .header-1 .search-form label{
     font-size: 30px;
     padding-right: 24px;
-    color:var(--black);
+    color:var(--secondary-color);
     cursor: pointer;
 }
 
@@ -108,7 +117,7 @@ body{
     height: 30%;
     display:flex;
     margin-left: 24px;
-    color:var(--black);
+    color:var(--secondary-color);
     cursor: pointer;
     gap: 5%;
 }
@@ -122,8 +131,9 @@ body{
 }
 
 #iconLightOff{
-    width:20px;
-    height:100%;
+    width:40px;
+    height:40px;
+    padding:-10px;
     cursor:pointer;
 }
 
@@ -451,28 +461,168 @@ body{
 }
 
 
+/* cart */
+.hidden{
+    display:hidden;
+}
+.cart{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:350px;
+    color:var(--secondary-color);
+    min-height: 100%;
+    padding:20px;
+    background:var(--primary-color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    z-index: 1500;
+    transition:0.4s;
+}
+.cart.active{
+    right:0;
+}
+.cart-title{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.cart-box{
+    display:grid;
+    grid-template-columns: 22% 50% 28%;
+    align-items: center;
+    gap:12px;
+    margin-top:12px;
+}
+.cart-img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    padding:10px;
+}
+.cart-quantity{
+    border: 1px solid var(--secondary-color);
+    outline-color: var(--secondary-color);
+    width:40px;
+    text-align:center;
+    font-size: 13px;
+}
+.cart-product-title{
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.cart-remove{
+    font-size: 24px;
+    color:rgb(11, 156, 108);
+    cursor:pointer;
+}
+.total{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    border-top: 1px solid var(--secondary-color);
+}
+.total-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.total-price{
+    margin-right: 20px;
+    font-size: 18px;
+}
+.btn-buy{
+    display:flex;
+    margin: 16px auto 0 auto;
+    padding: 12px 20px;
+    background:var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+    cursor:pointer;
+}
+#close-cart{
+    position:absolute;
+    top: 16px;
+    right: 8px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    cursor:pointer;
+}
+.detail-box{
+    display:grid;
+    row-gap:8px;
+    width:70%;
+}
 /* reading */
 .reading-area{
     margin-top: 8%;
     width:100%;
     display:flex;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/007/188/398/non_2x/abstract-blur-background-with-pastel-color-free-vector.jpg");
 }
-.reading-area h2{
-    margin-top: 10%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color:#05464e;
+.overlay{
+    height:100%;
+    width:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+    align-items: center;
+    justify-content: center;
+    z-index:20000;  
+    margin-top:70px;
+    color:var(--secondary-color)
+}
+.overlay h4{
+    padding: 30px;
+}
+.close{
+    margin-top: 0;
+    margin-right: 0;
+}
+.close:hover{
+    background:sienna;
+}
+.overlay-inner{
+    background:var(--primary-color);
+    width:80%;
+    height:70%;
+    padding: 36px;
+    margin-top:20px;
+    position:relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 13px;
+    display:flex;
+   
+}
+.inner-book{
+    width:50%;
+    margin-left: 30px;
+}
+.inner-book img{
+    width:100px;
+}
+#read-click{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    gap:10%;
+}
+.read p{
+    color:var(--secondary-color);
+    font-size: 13px;
+}
+.read img{
+    width:200px;
+    
+}
+.read img:hover{
+    filter: drop-shadow(0 0 0.75rem rgb(41, 43, 179)); 
+}
+.read p{
     text-align: center;
-}
-.reading-area .read{
-    width:40%;
-    font-size:14px;
-}
-.reading-area .read img{
-    width:8%;
-    margin-left: 4%;
-    margin-top: 4%;
 }
 .reading-area .upd{
     width:60%;
@@ -883,6 +1033,86 @@ body{
 #cc:hover #five {
 	transform: translate(-25px, 0px);
 }
+.contact-form {
+    margin: 35px auto 0px auto;
+    width: 80%;
+    color:var(--secondary-color);
+    
+  }
+
+.contact-form h3 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 25px;
+    
+  }
+  
+.contact-form p {
+    text-align: center;
+    margin: 15px auto 0px auto;
+    font-size: 14px;
+    width: 80%;
+}
+.contact-form label {
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+  
+.contact-form input {
+    text-transform:lowercase;
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: var(--primary-color);
+    font-size: 14px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+  
+.contact-form input:focus {
+    border-bottom: 2px solid #1a883f;
+}
+  
+.contact-form textarea {
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: var(--primary-color);
+    font-size: 18px;
+    border-radius: 3px;
+    width: 100%;
+    font-family: inter;
+    font-weight: normal;
+}
+.contact-form textarea:focus{
+    border-radius: 2px solid #1a883f;
+}
+
+.contact-form button {
+    font-size: 13px;
+    width: 20%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: none;
+    padding: 12px 20px;
+    background-color: #22b352;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-bottom: 3px solid #1a883f;
+    display:flex;
+    justify-content: center;
+  }
+  
+  .contact-form button:hover {
+    background-color:var(--green);
+    border-bottom: 3px solid #22b352;
+  }
 /* footer */
 .footer{
     color:var(--secondary-color);
